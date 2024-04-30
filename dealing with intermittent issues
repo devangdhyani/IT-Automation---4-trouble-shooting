@@ -1,0 +1,7 @@
+Since you don't know exactly when the bug will trigger, you need to be thorough with the information that you log. 
+^ If you can't modify the code of the program to get more information, check if there's a logging configuration that you can change.
+? /Many applications and services already include a debugging mode that generates a lot more output then the default mode.
+bugs usaly points :-
+1)the memory was wrongly allocated,
+2)the network connections weren't correctly initialized,
+3)the open files weren't properly handled.
