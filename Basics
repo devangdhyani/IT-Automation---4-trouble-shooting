@@ -1,1 +1,13 @@
 Trouble shooting 
+? // reproduction case //
+A reproduction case is a way to verify if the problem is present or not.
+// Log//
+ On Linux, you'd read system logs like **/var/log/syslog and user-specific logs like the.xsession-errors file located in the user's home directory.
+ & on window 
+you'd use the Event Viewer tool to go through the event logs
+Reproduction case is done but what to do about Root cause
+Root cause-> we use iotop that let us see which process is taking more input and output.
+other are => iostat and vmstat these tools show statistics on the input/output operations and the virtual memory operations.
+ionice => make our backup system reduce its priority to access the disk and let the web services use it too.
+We can check if network traffic using iftop, yet another tool similar to top that shows the current traffic on the network interfaces.
+NOW dealing with intermit issues.
