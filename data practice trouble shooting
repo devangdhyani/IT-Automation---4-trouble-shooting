@@ -1,0 +1,21 @@
+cd import_data            
+cat contact.csv | ./import.py
+////we should run it against the test database instead of the production database. 
+//we'll use the --server flag that takes the name of the database server, and then we'll pass the test as the parameter.
+cat contact.csv | ./import.py -- server test
+wc                   // We can use the wc command that counts characters, words, and lines in a file. 
+ wc -l will print the amount of lines in a file.
+wc -l contact.csv
+100 contct.csv // thats difficult to seach all of them so// We can use the head command to print the first lines in the file <head>
+ the tail command to print the last lines.
+ head -15 contact.csv
+tail - 20 conatct.csv
+head -50 contact.csv | ./import.py --server test
+imporr eroor
+head -50 contact.csv | head -25|./import.py --server test
+import success
+head -50 contact.csv | tail -25|./import.py --server test
+error
+head -50 contact.csv | tail -25| head -13|./import.py --server test
+sucees
+  
